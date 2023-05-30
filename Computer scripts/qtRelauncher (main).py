@@ -2,7 +2,7 @@ import pyQTpage
 import time
 
 
-while 1>0:
+while True:
     time.sleep(1)
     pyQTpage.launch()
     

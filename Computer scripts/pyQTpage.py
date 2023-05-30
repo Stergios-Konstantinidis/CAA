@@ -43,7 +43,24 @@ def create_user(idcampus_card, campus_cardlastname = "newlastname", campus_cardf
   else:
     verbose("Encountered errors while inserting rows in alcohol level: {}".format(errors))
 
+
 #create_user("1410818", "Konstantinidis", "Stergios", datetime.datetime.strptime("01.06.2000", "%d.%m.%Y"),4,False,84,1)
+
+
+def add_time_departure(campus_card_uid, departure_time):
+  table_id = 'projetalcohol.time_departure'
+  to_load = """{"campus_card_idcampus_card":"***","time_departuredate":"*****","time_departuretime":"******"}"""
+  to_load = to_load.replace("******", str(datetime.datetime.strptime(departure_time,'%H:%M').strftime('%H:%M:%S')))
+  to_load = to_load.replace("*****", (datetime.datetime.now()).strftime('%Y-%m-%d'))
+  rows_to_insert = [json.loads(to_load.replace("***", campus_card_uid))]
+
+  errors = client.insert_rows_json(table_id, rows_to_insert)  # Make an API request.
+  if errors == []:
+    verbose("New rows have been added.")
+  else:
+    verbose("Encountered errors while inserting rows in alcohol level: {}".format(errors))
+
+
 
 def drop_user(campuscard_uid):
    q1 = """DELETE FROM `sbb-project-2023.projetalcohol.campus_card` WHERE idcampus_card = "{}";""".format(str(campuscard_uid))
@@ -198,7 +215,9 @@ class Ui_List(object):
         birthday = self.birthday.dateTime().toPyDateTime()
         drop_user(campuscard_uid)
         create_user(campuscard_uid,last_name,first_name,birthday,campus_cardweight=weight,alcohol_authorized=alcohol_authorized)
-        QtCore.QCoreApplication.instance().quit()        
+        QtCore.QCoreApplication.instance().quit()  
+
+        add_time_departure(self.label_2.text(),self.DepartureTime_2.text())  
         
     def on_check_box_checked_no_limit(self):
        self.checkBox_2.setCheckState(not self.checkBox.checkState())
@@ -271,6 +290,16 @@ class Ui_List(object):
         
             
 def launch():
+  import sys
+  app = QtWidgets.QApplication(sys.argv)
+  List = QtWidgets.QDialog()
+  ui = Ui_List()
+  ui.setupUi(List)
+  List.show()
+  app.exec_()
+  app.quit()
+
+if __name__ == "__main__":
   import sys
   app = QtWidgets.QApplication(sys.argv)
   List = QtWidgets.QDialog()
