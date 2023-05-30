@@ -80,7 +80,7 @@ from sbb-project-2023.projetalcohol.campus_card;"""
     for i in range(number_of_records + 1):
         if firstnames[number_of_records - i] != "newfirstname" and firstnames[number_of_records - i] not in usernames and campus_card_uid[number_of_records - i] not in usernames:
             usernames.append(firstnames[number_of_records - i])
-        elif firstnames[number_of_records - i] != "newfirstname" and firstnames[number_of_records - i] not in usernames and campus_card_uid[number_of_records - i] not in usernames:
+        elif firstnames[number_of_records - i] == "newfirstname" and campus_card_uid[number_of_records - i] not in usernames:
             usernames.append(campus_card_uid[number_of_records - i])
     return usernames
 
@@ -295,6 +295,7 @@ def launch():
   List = QtWidgets.QDialog()
   ui = Ui_List()
   ui.setupUi(List)
+  ui.on_user_selection()
   List.show()
   app.exec_()
   app.quit()
