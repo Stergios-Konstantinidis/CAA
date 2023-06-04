@@ -49,6 +49,7 @@ Follow the instructions available on this video:
 [![Watch the video](https://img.youtube.com/vi/HwvgxxBavII/default.jpg)](https://www.youtube.com/watch?v=HwvgxxBavII)
 
 ### Jupyter notebook:
+[![Watch the video](https://img.youtube.com/vi/1HLBldzl3rs/default.jpg)](https://www.youtube.com/watch?v=1HLBldzl3rs)
 
 ### PyQt interface:
 
