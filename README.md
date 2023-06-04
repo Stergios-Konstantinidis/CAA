@@ -25,6 +25,7 @@ Finaly we have a Colaboratory page runing an infinite loop with the function run
 4. Reccomendation : Gives drinks recommendations based on how much alcohol a user can still consume, considering his
 current alcohol level, the legal limit 0.25 mg/L and the time he would like to leave and start to drive. The
 function will recommend 3 different beverage:
+
 • The most widely served alcoholic drink
 • A randomly selected alcoholic beverage
 • The most widely served non-alcoholic drink
