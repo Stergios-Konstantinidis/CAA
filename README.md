@@ -3,8 +3,15 @@
  ### 2023 HEC Lausanne
  
  #### Huynh Nguyen
+ - Recommendations
+ - SQL
  #### Michaela Píchová
+ - Analytics
+ - SQL
  #### Stergios Konstantinidis
+ - Back-end
+ - UI's
+ - Utils
 
 ## Project Goals:
 Establish a system that evalates the alcohol level in someones body. 
