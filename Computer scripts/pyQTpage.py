@@ -77,10 +77,12 @@ from sbb-project-2023.projetalcohol.campus_card;"""
     campus_card_uid = query_job.to_dataframe()['campuscard'].tolist()
     usernames = []
     number_of_records = len(campus_card_uid) - 1
+    usercards = []
     for i in range(number_of_records + 1):
         if firstnames[number_of_records - i] != "newfirstname" and firstnames[number_of_records - i] not in usernames and campus_card_uid[number_of_records - i] not in usernames:
             usernames.append(firstnames[number_of_records - i])
-        elif firstnames[number_of_records - i] == "newfirstname" and campus_card_uid[number_of_records - i] not in usernames:
+            usercards.append(campus_card_uid[number_of_records - i])
+        elif firstnames[number_of_records - i] == "newfirstname" and campus_card_uid[number_of_records - i] not in usernames and campus_card_uid[number_of_records - i] not in usercards:
             usernames.append(campus_card_uid[number_of_records - i])
     return usernames
 
@@ -209,7 +211,7 @@ class Ui_List(object):
         elif self.checkBox_2.isChecked():
            alcohol_authorized = 1
         else:
-           alcohol_authorized = 3
+           alcohol_authorized = 2
         
         
         birthday = self.birthday.dateTime().toPyDateTime()
