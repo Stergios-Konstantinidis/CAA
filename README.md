@@ -36,8 +36,11 @@ Finaly we have a Colaboratory page runing an infinite loop with the function run
 
    If his current alcohol level is too high, and shouldn't get more alcohol, the function    will propose him only non-alcoholic drink:the top 3 of the most widely served non-alcoholic drink. It is the same if he could get only 1 option of alcoholic drink, the rest of choice are filled with non-alcoholic drink.
 
-5. Post event analytics for the bar #Michaela could you write this part? We can then make the analytics or if you have time you can dig into it
-
+5. Post event analytics for the bar: 
+ * Overview of beverages and the number of servings this week
+ * The most served drink today and how many times it was served
+ * Top three persons that had the most beers last week and how many beers they had
+ * What was the maximum level of alcohol measured for the past seven days
 
 ## Final result:
 
