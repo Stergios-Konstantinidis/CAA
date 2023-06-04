@@ -22,7 +22,13 @@ Finaly we have a Colaboratory page runing an infinite loop with the function run
 1. Current alcohol level 1: We have a standard function that evaluates the alcohol level based on the TVOC sensor (through a Linear Regression fit from data where we had both the TVOC value and the true value
 2. Current alcohol level 2: We have a function that evaluates the alcohol level the user should have according to the drink he drank from our system. 
 3. Ultimately the maximal value between the current alcohol level 1 and the current alcohol level 2 is kept. That is not as much as for analytics as to ensure that no one would get overly affected by alcohol due to one of the metrics being wrong.
-4. Reccomendation #Mifa could you write this part?
+4. Reccomendation : Gives drinks recommendations based on how much alcohol a user can still consume, considering his
+current alcohol level, the legal limit 0.25 mg/L and the time he would like to leave and start to drive. The
+function will recommend 3 different beverage:
+• The most widely served alcoholic drink
+• A randomly selected alcoholic beverage
+• The most widely served non-alcoholic drink
+
 5. Post event analytics for the bar #Michaela could you write this part? We can then make the analytics or if you have time you can dig into it
 
 
