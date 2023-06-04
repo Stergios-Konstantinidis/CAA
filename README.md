@@ -26,7 +26,25 @@ Finaly we have a Colaboratory page runing an infinite loop with the function run
 5. Post event analytics for the bar #Michaela could you write this part? We can then make the analytics or if you have time you can dig into it
 
 
-Final result:
+## Final result:
 
-#place here our future video
+[![Watch the video](https://img.youtube.com/vi/NsvXTMALeLc/default.jpg)](https://www.youtube.com/watch?v=NsvXTMALeLc)
+
+## How to set it up on your own device:
+1st step:
+Recreate the following SQL tables on your Big querry in a project called "SBB-Project-2023" and a dataset named "projetalcohol".
+
+2nd step:
+Follow the instructions available on this video:
+
+
+## Step by step code review:
+### M5 stacks device:
+
+
+### Jupyter notebook:
+
+### PyQt interface:
+
+### SQL tables:
 
