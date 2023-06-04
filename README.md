@@ -29,12 +29,11 @@ Finaly we have a Colaboratory page runing an infinite loop with the function run
 1. Current alcohol level 1: We have a standard function that evaluates the alcohol level based on the TVOC sensor (through a Linear Regression fit from data where we had both the TVOC value and the ground truth
 2. Current alcohol level 2: We have a function that evaluates the alcohol level the user should have according to the drink he drank from our system. 
 3. Ultimately the maximal value between the current alcohol level 1 and the current alcohol level 2 is kept. That is not as much as for analytics as to ensure that no one would get overly affected by alcohol due to one of the metrics being wrong or incomplete (eg: drink taken outside of our system or the user not having absorbed the alcohol yet)
-4. Reccomendation : Gives drinks recommendations based on how much alcohol a user can still consume, considering his
-current alcohol level, the legal limit 0.25 mg/L and the time he would like to leave and start to drive. The
-function will recommend 3 different beverage:
+4. Reccomendation : Gives drinks recommendations based on how much alcohol a user can still consume, considering his current alcohol level, the legal limit 0.25 mg/L and the time he would like to leave and start to drive. The function will recommend 3 different beverages:
  * The most widely served alcoholic drink
  * A randomly selected alcoholic beverage
  * The most widely served non-alcoholic drink
+If his current alcohol level is too high, and shouldn't get more alcohol, the function will propose him only non-alcoholic drink:the top 3 of the most widely served non-alcoholic drink. It is the same if he could get only 1 option of alcoholic drink, the rest of choice are filled with non-alcoholic drink.
 
 5. Post event analytics for the bar #Michaela could you write this part? We can then make the analytics or if you have time you can dig into it
 
