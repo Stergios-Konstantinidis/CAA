@@ -39,10 +39,11 @@ function will recommend 3 different beverage:
 ## How to set it up on your own device:
 1st step:
 Recreate the following SQL tables on your Big querry in a project called "SBB-Project-2023" and a dataset named "projetalcohol".
+<img width="688" alt="image" src="https://github.com/Stergios-Konstantinidis/CAA/assets/114418694/665f662f-6248-4983-a584-ab5113fce955">
 
 2nd step:
 Follow the instructions available on this video:
-
+[![Watch the video](https://img.youtube.com/vi/VlaVG64jTiY/default.jpg)](https://www.youtube.com/watch?v=VlaVG64jTiY)
 
 ## Step by step code review:
 ### M5 stacks device:
@@ -52,6 +53,8 @@ Follow the instructions available on this video:
 [![Watch the video](https://img.youtube.com/vi/1HLBldzl3rs/default.jpg)](https://www.youtube.com/watch?v=1HLBldzl3rs)
 
 ### PyQt interface:
+[![Watch the video](https://img.youtube.com/vi/A3NbOance4s/default.jpg)](https://www.youtube.com/watch?v=A3NbOance4s)
 
 ### SQL tables:
+[![Watch the video](https://img.youtube.com/vi/MKnWeUFW2No/default.jpg)](https://www.youtube.com/watch?v=MKnWeUFW2No)
 
