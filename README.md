@@ -3,7 +3,7 @@
  ### 2023 HEC Lausanne
  
  #### Huynh Nguyen
- - Recommendations
+ - Recommenders
  - SQL
  #### Michaela Píchová
  - Analytics
