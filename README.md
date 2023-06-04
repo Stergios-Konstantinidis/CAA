@@ -26,9 +26,9 @@ We are also using a computer that runs a PyQT page where users can update their 
 Finaly we have a Colaboratory page runing an infinite loop with the function running the user identification; evaluates their alcohol level and finaly recommends drinks.
 
 ## Analytics:
-1. Current alcohol level 1: We have a standard function that evaluates the alcohol level based on the TVOC sensor (through a Linear Regression fit from data where we had both the TVOC value and the true value
+1. Current alcohol level 1: We have a standard function that evaluates the alcohol level based on the TVOC sensor (through a Linear Regression fit from data where we had both the TVOC value and the ground truth
 2. Current alcohol level 2: We have a function that evaluates the alcohol level the user should have according to the drink he drank from our system. 
-3. Ultimately the maximal value between the current alcohol level 1 and the current alcohol level 2 is kept. That is not as much as for analytics as to ensure that no one would get overly affected by alcohol due to one of the metrics being wrong.
+3. Ultimately the maximal value between the current alcohol level 1 and the current alcohol level 2 is kept. That is not as much as for analytics as to ensure that no one would get overly affected by alcohol due to one of the metrics being wrong or incomplete (eg: drink taken outside of our system or the user not having absorbed the alcohol yet)
 4. Reccomendation : Gives drinks recommendations based on how much alcohol a user can still consume, considering his
 current alcohol level, the legal limit 0.25 mg/L and the time he would like to leave and start to drive. The
 function will recommend 3 different beverage:
@@ -45,11 +45,11 @@ function will recommend 3 different beverage:
 
 ## How to set it up on your own device:
 1st step:
-Recreate the following SQL tables on your Big querry in a project called "SBB-Project-2023" and a dataset named "projetalcohol".
+Recreate the following SQL tables on your Big querry in a project called "SBB-Project-2023" and a dataset named "projetalcohol".<br />
 <img width="688" alt="image" src="https://github.com/Stergios-Konstantinidis/CAA/assets/114418694/665f662f-6248-4983-a584-ab5113fce955">
 
 2nd step:
-Follow the instructions available on this video:
+Follow the instructions available on this video:<br />
 [![Watch the video](https://img.youtube.com/vi/VlaVG64jTiY/default.jpg)](https://www.youtube.com/watch?v=VlaVG64jTiY)
 
 ## Step by step code review:
