@@ -40,7 +40,7 @@ Follow the instructions available on this video:
 
 ## Step by step code review:
 ### M5 stacks device:
-
+[![Watch the video](https://img.youtube.com/vi/HwvgxxBavII/default.jpg)](https://www.youtube.com/watch?v=HwvgxxBavII)
 
 ### Jupyter notebook:
 
